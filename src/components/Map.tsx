@@ -37,8 +37,8 @@ const Map: React.FC<MapProps> = ({ incidents, onLocationSelect, isReporting = fa
       map.current = new mapboxgl.Map({
         container: mapContainer.current,
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [20, 99], // Default center coordinates
-        zoom: 5
+        center: [78.9629, 20.5937], // Default center coordinates
+        zoom: 4.2
       });
 
       // Add controls
