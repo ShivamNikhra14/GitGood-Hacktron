@@ -75,7 +75,7 @@ const Index = () => {
       <footer className="mt-auto py-6 bg-safety-900 text-white">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm text-gray-300">
-            Safety Beacon - Anonymous Harassment Reporting System
+            SafeVoice - Anonymous Harassment Reporting System
           </p>
           <p className="text-xs text-gray-400 mt-1">
             In case of emergency, please contact local authorities directly.

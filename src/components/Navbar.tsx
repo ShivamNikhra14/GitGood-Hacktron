@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange }) => {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center">
             <Shield className="h-6 w-6 text-primary mr-2" />
-            <h1 className="text-xl font-bold">Safety Beacon</h1>
+            <h1 className="text-xl font-bold">SafeVoice</h1>
           </div>
           
           <Tabs value={activeTab} onValueChange={onTabChange} className="w-full sm:w-auto">
