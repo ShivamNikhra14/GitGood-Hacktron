@@ -47,30 +47,35 @@ const Index = () => {
       
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Main content area */}
-          <div className={`lg:col-span-2 ${activeTab === 'map' ? 'block' : 'hidden lg:block'}`}>
-            <div className="bg-background rounded-lg h-[70vh] shadow-sm">
-              <Map 
-                incidents={incidents} 
-                onLocationSelect={activeTab === 'report' ? handleLocationSelect : undefined}
-                isReporting={activeTab === 'report'}
-              />
-            </div>
-            
-            <div className="mt-6">
-              <ReportsList incidents={incidents} />
-            </div>
-          </div>
-          
-          {/* Report form sidebar */}
-          <div className={`${activeTab === 'report' ? 'block' : 'hidden lg:block'}`}>
-            <ReportForm 
-              onSubmit={handleReportSubmit} 
-              selectedLocation={selectedLocation}
+        {/* Map - Always visible */}
+        <div className="lg:col-span-2">
+          <div className="bg-background rounded-lg h-[70vh] shadow-sm">
+            <Map 
+              incidents={incidents} 
+              onLocationSelect={activeTab === 'report' ? handleLocationSelect : undefined}
+              isReporting={activeTab === 'report'}
             />
           </div>
+
+        {/* Show ReportsList only on Map tab */}
+        {activeTab === 'map' && (
+        <div className="mt-6">
+          <ReportsList incidents={incidents} />
         </div>
-      </main>
+      )}
+    </div>
+
+    {/* Show ReportForm only on Report tab */}
+    {activeTab === 'report' && (
+      <div>
+        <ReportForm 
+          onSubmit={handleReportSubmit} 
+          selectedLocation={selectedLocation}
+        />
+      </div>
+    )}
+  </div>
+</main>
       
       <footer className="mt-auto py-6 bg-safety-900 text-white">
         <div className="container mx-auto px-4 text-center">
