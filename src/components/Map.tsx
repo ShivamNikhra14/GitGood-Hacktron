@@ -17,7 +17,7 @@ interface MapProps {
 }
 
 // Initialize with an empty token - user will need to provide this
-const MAPBOX_TOKEN = '';
+const mapboxToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
 const Map: React.FC<MapProps> = ({ incidents, onLocationSelect, isReporting = false }) => {
   const mapContainer = useRef<HTMLDivElement>(null);
