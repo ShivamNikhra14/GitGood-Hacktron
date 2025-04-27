@@ -4,6 +4,8 @@ Anonymous Harassment Reporting Platform with Real-Time Heatmaps
 📌 Problem Statement
 W3: Develop a solution to address the cumbersome harassment reporting process and the fear of retaliation by creating an anonymous platform. This platform allows users to securely report incidents, tag locations, and generate real-time heatmaps to inform policy interventions.​
 
+Access the project: https://safevoice101.netlify.app/
+
 🛠️ Tech Stack
 Frontend:
 
