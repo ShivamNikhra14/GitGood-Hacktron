@@ -46,19 +46,19 @@ const Index = () => {
       <Navbar activeTab={activeTab} onTabChange={setActiveTab} />
       
       <main className="flex-1 container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Map - Always visible */}
-        <div className="lg:col-span-2">
-          <div className="bg-background rounded-lg h-[70vh] shadow-sm">
-            <Map 
-              incidents={incidents} 
-              onLocationSelect={activeTab === 'report' ? handleLocationSelect : undefined}
-              isReporting={activeTab === 'report'}
-            />
-          </div>
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    {/* Map - Width depends on activeTab */}
+    <div className={`${activeTab === 'report' ? 'lg:col-span-2' : 'lg:col-span-3'}`}>
+      <div className="bg-background rounded-lg h-[70vh] shadow-sm">
+        <Map 
+          incidents={incidents} 
+          onLocationSelect={activeTab === 'report' ? handleLocationSelect : undefined}
+          isReporting={activeTab === 'report'}
+        />
+      </div>
 
-        {/* Show ReportsList only on Map tab */}
-        {activeTab === 'map' && (
+      {/* Show ReportsList only on Map tab */}
+      {activeTab === 'map' && (
         <div className="mt-6">
           <ReportsList incidents={incidents} />
         </div>
@@ -76,6 +76,7 @@ const Index = () => {
     )}
   </div>
 </main>
+
       
       <footer className="mt-auto py-6 bg-safety-900 text-white">
         <div className="container mx-auto px-4 text-center">
