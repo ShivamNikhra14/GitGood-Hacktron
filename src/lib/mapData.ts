@@ -6,8 +6,8 @@ import { Feature, FeatureCollection, Point } from 'geojson';
 export const sampleIncidents: Incident[] = [
   {
     id: '1',
-    latitude: 40.7128,
-    longitude: -74.0060,
+    latitude: 24.4359,
+    longitude:  77.1589,
     timestamp: '2023-04-15T14:30:00Z',
     category: 'verbal_harassment',
     severity: 'medium',
@@ -16,8 +16,8 @@ export const sampleIncidents: Incident[] = [
   },
   {
     id: '2',
-    latitude: 40.7138, 
-    longitude: -74.0055,
+    latitude: 24.4364,
+    longitude:  77.1600,
     timestamp: '2023-04-16T18:45:00Z',
     category: 'discrimination',
     severity: 'high',
@@ -26,8 +26,8 @@ export const sampleIncidents: Incident[] = [
   },
   {
     id: '3',
-    latitude: 40.7120,
-    longitude: -74.0090,
+    latitude: 24.4384,
+    longitude:  77.1782,
     timestamp: '2023-04-10T12:15:00Z',
     category: 'stalking',
     severity: 'high',
@@ -36,8 +36,8 @@ export const sampleIncidents: Incident[] = [
   },
   {
     id: '4',
-    latitude: 40.7150,
-    longitude: -74.0070,
+    latitude: 24.4354,
+    longitude:  77.1581,
     timestamp: '2023-04-18T20:30:00Z',
     category: 'physical_harassment',
     severity: 'critical',
@@ -46,8 +46,8 @@ export const sampleIncidents: Incident[] = [
   },
   {
     id: '5',
-    latitude: 40.7145,
-    longitude: -74.0050,
+    latitude: 24.4354,
+    longitude:  77.1581,
     timestamp: '2023-04-14T13:00:00Z',
     category: 'online_harassment',
     severity: 'medium',
@@ -56,8 +56,8 @@ export const sampleIncidents: Incident[] = [
   },
   {
     id: '6',
-    latitude: 40.7115,
-    longitude: -74.0030,
+    latitude: 24.4354,
+    longitude:  77.1581,
     timestamp: '2023-04-17T15:20:00Z',
     category: 'bullying',
     severity: 'medium',
@@ -66,8 +66,8 @@ export const sampleIncidents: Incident[] = [
   },
   {
     id: '7',
-    latitude: 40.7160, 
-    longitude: -74.0080,
+    latitude: 24.4354,
+    longitude:  77.1581,
     timestamp: '2023-04-13T19:45:00Z',
     category: 'discrimination',
     severity: 'high',
@@ -76,8 +76,8 @@ export const sampleIncidents: Incident[] = [
   },
   {
     id: '8',
-    latitude: 40.7135,
-    longitude: -74.0110,
+    latitude: 24.4354,
+    longitude:  77.1581,
     timestamp: '2023-04-19T22:10:00Z',
     category: 'verbal_harassment',
     severity: 'low',
